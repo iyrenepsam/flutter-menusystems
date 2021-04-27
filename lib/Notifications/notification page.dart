@@ -24,6 +24,9 @@ class Notifications  extends StatelessWidget {
                     child:TextField())
               ],
             ),
+
+            SizedBox(height: 30.0),
+
             Row(
               children: [
                 Expanded(

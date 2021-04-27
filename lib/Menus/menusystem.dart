@@ -22,7 +22,6 @@ class _MyMenuState extends State<MyMenu> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(),
         body: mypages[currentselection],
         bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
@@ -30,13 +29,14 @@ class _MyMenuState extends State<MyMenu> {
             currentIndex: currentselection,
             items: [
               BottomNavigationBarItem(
-                  title: Text("Home"),
+
+                  label: "Home",
                   icon: Icon(Icons.home)),
               BottomNavigationBarItem(
-                  title: Text("Settings"),
+                  label: "Settings",
                   icon: Icon(Icons.settings)),
               BottomNavigationBarItem(
-                  title: Text("Notifications"),
+                  label: "Notifications",
                   icon: Icon(Icons.notifications))
             ],
             onTap:(index)
